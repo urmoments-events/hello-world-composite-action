@@ -23,9 +23,9 @@ runs:
       shell: bash
 
     - name: Terraform Init
-      run: terraform init
+      run: cd ${{ inputs.working-directory }} && terraform init
       shell: bash
 
     - name: Terraform Plan
-      run: terraform plan
+      run: cd ${{ inputs.working-directory }} && terraform plan
       shell: bash
