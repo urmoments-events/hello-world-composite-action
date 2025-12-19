@@ -12,6 +12,15 @@ runs:
   steps:
     - name: Set working directory
       run: cd ${{ inputs.working-directory }}
+      run: ls -la
+      shell: bash
+
+    - name: Check working directory
+      run: ls -la
+      shell: bash
+
+    - name: Validate working directory
+      run: pwd
       shell: bash
 
     - name: Terraform Init
