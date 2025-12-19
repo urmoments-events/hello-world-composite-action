@@ -12,7 +12,6 @@ runs:
   steps:
     - name: Set working directory
       run: cd ${{ inputs.working-directory }}
-      run: ls -la
       shell: bash
 
     - name: Check working directory
